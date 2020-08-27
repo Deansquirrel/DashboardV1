@@ -28,7 +28,7 @@ export const checkToken = async (
     console.log('request failed', e);
     return {
       code: -1,
-      msg: e.message,
+      msg: 'request failed' + e,
       data: undefined,
     };
   }
